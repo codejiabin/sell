@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Document</title>
+	<style>
+		.parent{
+			display:flex;
+		}
+		.children{
+			flex:1;
+			min-width:0;
+		}
+		.text-deal{
+			white-space: nowrap;
+			overflow:hidden;
+			text-overflow: ellipsis;
+		}
+		.text-overflow-ellipsis{
+			margin-top:20px;
+			height:62px;
+			width:100px;
+			text-overflow: ellipsis;
+			overflow:hidden;
+			display:-webkit-box;
+			-webkit-line-clamp:3;
+			-webkit-box-orient:vertical;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="children">
+			<div class="text-deal">
+				这是一个有效果的文字超出用省略号代替的例子，你看可以吗？
+			</div>
+		</div>
+	</div>
+	<div class="text-overflow-ellipsis">
+		今天天气好晴朗 处处好风光 好风光 蝴蝶儿忙 蜜蜂也忙 小鸟儿忙着 白云也忙
+	</div>
+</body>
+</html>
