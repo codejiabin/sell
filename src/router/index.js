@@ -15,6 +15,10 @@ export default new Router({
       component: Main,
       children:[
         {
+          path:'/',
+          component:Goods
+        },
+        {
           path:'/goods',
           component:Goods
         },
