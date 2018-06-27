@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Count from '@/components/Count'
 import Main from '@/components/main/main'
 import Goods from '@/components/goods/goods'
 import Ratings from '@/components/ratings/ratings'
@@ -31,10 +30,6 @@ export default new Router({
           component:Seller
         }
       ]
-    },
-    {
-      path:'/count',
-      component:Count
     }
   ],
   linkActiveClass:'active'
